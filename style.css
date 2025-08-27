@@ -1,11 +1,12 @@
-/* ============================= Base + Theme ============================= */
 :root {
    --bg: #0a0a0b;
    --surface: rgba(255, 255, 255, 0.06);
    --text: #e7e7ea;
    --muted: #a0a0a6;
-   --accent: #7df9ff; /* cyber teal */
-   --accent-2: #a8ff35; /* neon lime */
+   --accent: #7df9ff;
+   /* cyber teal */
+   --accent-2: #a8ff35;
+   /* neon lime */
    --ring: rgba(125, 249, 255, 0.45);
    --shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
    --radius: 20px;
@@ -56,73 +57,72 @@ img {
    padding: 80px 0;
 }
 
-/* ============================= Navbar ============================= */
 .nav {
-  position:fixed;
-  top: 0;
-  width: 100%;
-  background: rgba(7, 7, 7, 0.115); /* transparent layer */
-  backdrop-filter: blur(27px);
-  color: #fff;
-  z-index: 1000;
-  padding: 12px 20px;
+   position: fixed;
+   top: 0;
+   width: 100%;
+   background: rgba(7, 7, 7, 0.115);
+   backdrop-filter: blur(27px);
+   color: #fff;
+   z-index: 1000;
+   padding: 12px 20px;
 }
 
 .nav-inner {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
 }
 
 .brand {
-  display: flex;
-  align-items: center;
-  gap: 8px;
+   display: flex;
+   align-items: center;
+   gap: 8px;
 }
 
 .brand-name {
-  font-weight: 800;
-  letter-spacing: 0.5px;
-  color: #fff;
-  text-decoration: none;
+   font-weight: 800;
+   letter-spacing: 0.5px;
+   color: #fff;
+   text-decoration: none;
 }
 
 .nav-links {
-  display: flex;
-  align-items: center;
-  gap: 20px;
+   display: flex;
+   align-items: center;
+   gap: 20px;
 }
 
 .nav-links a {
-  color: #fff;
-  text-decoration: none;
-  font-weight: 500;
+   color: #fff;
+   text-decoration: none;
+   font-weight: 500;
 }
 
 .btn.primary {
-  background: rgba(130, 255, 72, 0.15); /* translucent neon lime */
-  backdrop-filter: blur(6px);
-  -webkit-backdrop-filter: blur(6px);
-  color: var(--accent-2);
-  font-weight: 600;
-  padding: 10px 18px;
-  transition: background 0.3s ease, box-shadow 0.3s ease;
+   background: rgba(130, 255, 72, 0.15);
+   backdrop-filter: blur(6px);
+   -webkit-backdrop-filter: blur(6px);
+   color: var(--accent-2);
+   font-weight: 600;
+   padding: 10px 18px;
+   transition: background 0.3s ease, box-shadow 0.3s ease;
 }
 
 .btn.primary:hover {
-  background: rgba(130, 255, 72, 0.25);
-  box-shadow: 0 0 16px rgba(168, 255, 53, 0.35);
+   background: rgba(130, 255, 72, 0.25);
+   box-shadow: 0 0 16px rgba(168, 255, 53, 0.35);
 }
 
 
 /* Hamburger */
 .menu-toggle {
-  display: none;
-  background: none;
-  border: none;
-  color: #fff;
-  font-size: 1.6rem;
-  cursor: pointer;
+   display: none;
+   background: none;
+   border: none;
+   color: #fff;
+   font-size: 1.6rem;
+   cursor: pointer;
 }
 
 .brand {
@@ -169,7 +169,7 @@ img {
    border-color: rgba(255, 255, 255, 0.14)
 }
 
-/* ============================= Hero ============================= */
+
 .hero {
    display: grid;
    grid-template-columns: 1.2fr .8fr;
@@ -269,7 +269,7 @@ h1 {
    margin-top: 10px;
 }
 
-/* ============================= Feature Grid ============================= */
+
 .grid {
    display: grid;
    grid-template-columns: repeat(3, 1fr);
@@ -316,7 +316,7 @@ h1 {
    margin-bottom: 10px;
 }
 
-/* ============================= Pricing ============================= */
+
 .pricing {
    display: grid;
    grid-template-columns: repeat(3, 1fr);
@@ -366,25 +366,26 @@ h1 {
    font-size: 14px;
 }
 
-/* ============================= Testimonials ============================= */
+
 .testi-wrap {
-  position: relative;
-  overflow: hidden;
+   position: relative;
+   overflow: hidden;
 }
 
 .testi-track {
-  display: flex;
-  transition: transform 0.4s ease;
+   display: flex;
+   transition: transform 0.4s ease;
 }
 
 .testi {
-  flex: 0 0 100%; /* full width */
-  box-sizing: border-box;
-  padding: 1rem;
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.02));
+   flex: 0 0 100%;
+   /* full width */
+   box-sizing: border-box;
+   padding: 1rem;
+   background: linear-gradient(180deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.02));
 }
 
-/* ============================= Countdown ============================= */
+
 .countdown {
    display: grid;
    grid-auto-flow: column;
@@ -413,14 +414,45 @@ h1 {
    color: var(--muted);
 }
 
-/* ============================= Footer ============================= */
+
 footer {
    padding: 40px 0;
    border-top: 1px solid rgba(255, 255, 255, 0.08);
    color: var(--muted);
 }
 
-/* =============================Media Queries============================= */
+
+.gallery .image-grid {
+   display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+   gap: 24px;
+}
+
+.gallery .img-item {
+   position: relative;
+   overflow: hidden;
+   border-radius: 16px;
+}
+
+.gallery .img-item img {
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+   transition: transform 0.3s ease;
+}
+
+.gallery .img-item:hover img {
+   transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+   .gallery .image-grid {
+      grid-template-columns: 1fr;
+      gap: 16px;
+   }
+}
+
+
 @media (max-width: 768px) {
    .section {
       padding: 60px 0;
@@ -454,23 +486,23 @@ footer {
 }
 
 @media (max-width: 768px) {
-  .nav-links {
-    display: none;
-    flex-direction: column;
-    position: absolute;
-    top: 60px;
-    right: 20px;
-    background: #111;
-    width: 200px;
-    padding: 12px;
-    border-radius: 10px;
-  }
+   .nav-links {
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      top: 60px;
+      right: 20px;
+      background: #111;
+      width: 200px;
+      padding: 12px;
+      border-radius: 10px;
+   }
 
-  .nav-links.show {
-    display: flex;
-  }
+   .nav-links.show {
+      display: flex;
+   }
 
-  .menu-toggle {
-    display: block;
-  }
+   .menu-toggle {
+      display: block;
+   }
 }
